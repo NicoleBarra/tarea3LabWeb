@@ -1,0 +1,42 @@
+
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Clarence Taylor</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="" /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">User List</a>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Users'
+                        <span class="text-primary">List</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        admin
+                        <a href="mailto:name@email.com">{{user}}</a>
+                    </div>
+                    <ul>
+                        {{#each users}}
+                        <li>
+                            Nombre: {{name}} (email: {{email}})
+                        </li>
+                        {{/each}}
+                    </ul>
+
+
+                    <p class="lead mb-5">Copied the style from a bootstrap template because I wanted it to look nice :) </p>
+                    <p class= "lead mb-5">Link to the github of theme: <a href="https://github.com/StartBootstrap/startbootstrap-resume" target="_blank">here!</a></p>
+                </div>
+            </section>
+            <hr class="m-0" />
+        
